@@ -1,0 +1,75 @@
+section.projects
+    display: flex
+    flex-direction: column
+    background-color: #eee
+
+    header
+        background-image: url('../images/bg_portfolio.jpg')
+        background-position: left center
+
+    div.project
+        padding: 30px 5%
+
+        > div
+            display: flex
+            flex-direction: column
+            padding: 20px 0 0 0
+
+            p.technologiesUsed, p.links
+                padding-bottom: 20px
+                transform: translateX(-30%)
+                opacity: 0
+                transition: 0.8s
+
+                &.active
+                    transform: translateX(0)
+                    opacity: 1
+
+            div.photo
+                padding-bottom: 20px
+
+                img
+                    width: 90%
+                    transform: translateX(-30%)
+                    opacity: 0
+                    transition: 0.8s
+
+                    &.active
+                        transform: translateX(0)
+                        opacity: 1
+
+            p.links
+                a
+                    margin: 0 15px
+
+                    i
+                        font-size: 50px
+                        color: royalblue
+                        transition: 0.3s
+
+                    &:hover
+                        i
+                            color: #444
+
+            p.technologiesUsed
+                span
+                    padding: 5px 10px
+                    margin: 0 5px
+                    border: 4px solid royalblue
+                    background-color: royalblue
+                    color: white
+                    border-radius: 15%
+                    line-height: 3
+                    font-weight: bold
+                    text-transform: uppercase
+
+        @media (min-width: 768px)
+            & > div
+                flex-direction: row
+                justify-content: space-around
+
+                div
+                    flex-basis: 45%
+
+                p.technologiesUsed, p.links
+                    padding-bottom: 40px

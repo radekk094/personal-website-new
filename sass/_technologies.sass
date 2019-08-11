@@ -1,0 +1,47 @@
+section.technologies
+    display: flex
+    flex-direction: column
+
+    h2
+        margin: 30px 0
+
+    div.technology
+        padding: 30px 5%
+
+        img
+            width: 40%
+            max-width: 150px
+            transform: translateY(-50px)
+            opacity: 0
+            transition: 0.8s
+
+            &.active
+                transform: translateY(0)
+                opacity: 1
+
+    @media (min-width: 768px)
+        &
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-around
+
+            div.technology
+                flex-basis: 45%
+                padding: 30px
+
+                div.photo
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    height: 192px
+
+                    img
+                        width: 150px
+
+    @media (min-width: 1024px)
+        div.technology
+            flex-basis: 30%
+            
+    @media (min-width: 1280px)
+        &
+            padding: 0 50px

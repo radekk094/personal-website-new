@@ -1,0 +1,62 @@
+section.contact
+    display: flex
+    flex-direction: column
+
+    header
+        background-image: url('../images/bg_contact.jpg')
+        margin-bottom: 30px
+
+    > div
+        padding: 30px 5%
+
+        span
+            i
+                font-size: 50px
+                color: royalblue
+                transition: 0.3s
+
+            a:hover
+                i
+                    color: #444
+
+        p
+            padding-top: 20px
+            font-size: 18px
+
+    div.social
+        display: flex
+        justify-content: space-around
+        padding: 60px 5%
+
+    @media (min-width: 360px)
+        > div
+            p
+                font-size: 20px
+
+    @media (min-width: 640px)
+        &
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-around
+
+            > div
+                flex-basis: 45%
+
+            > div:last-of-type
+                flex-basis: 100%
+
+    @media (min-width: 768px)
+        &
+            > div
+                span
+                    i
+                        font-size: 80px
+
+                p
+                    padding-top: 40px
+                    font-size: 24px
+
+    @media (min-width: 1280px)
+        > div
+            p
+                font-size: 24px
