@@ -7,11 +7,12 @@ $("header.mainHeader div.circle").on("click", function () {
 });
 
 
-// ELEMENTS ANIMATION DURING SCROLLING
+// ELEMENTS ANIMATION DURING SCROLLING, SHOW/HIDE LANGUAGE ICON
 
 const addElements = () => {
     const windowHeight = $(window).height();
     const scrollValue = $(document).scrollTop();
+    const contactSection = $("section.contact")
 
     const $elements = $(".animated");
 
@@ -23,6 +24,12 @@ const addElements = () => {
 
     if (scrollValue <= 50) {
         $("*").removeClass("active");
+    }
+
+    if ((scrollValue > windowHeight) && (scrollValue < (contactSection.offset().top + (contactSection.height() / 2) - windowHeight))) {
+        $("div.language").css("display", "block");
+    } else {
+        $("div.language").css("display", "none");
     }
 }
 
