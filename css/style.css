@@ -350,12 +350,12 @@ section.projects div.project > div p.links a:hover i {
 }
 
 section.projects div.project > div p.technologiesUsed span {
-  padding: 5px 10px;
   margin: 0 5px;
+  padding: 5px 10px;
   border: 4px solid royalblue;
+  border-radius: 15px;
   background-color: royalblue;
   color: white;
-  border-radius: 15px;
   line-height: 3;
   font-weight: bold;
   text-transform: uppercase;
@@ -390,8 +390,8 @@ section.interests {
 }
 
 section.interests header {
-  background-image: url("../images/bg_interests.jpg");
   margin-bottom: 30px;
+  background-image: url("../images/bg_interests.jpg");
 }
 
 section.interests div {
@@ -461,8 +461,8 @@ section.contact {
 }
 
 section.contact header {
-  background-image: url("../images/bg_contact.jpg");
   margin-bottom: 30px;
+  background-image: url("../images/bg_contact.jpg");
 }
 
 section.contact > div {
@@ -541,6 +541,8 @@ footer {
   margin-top: 30px;
   padding: 10px 0;
   background-color: #bbb;
+  -webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.5);
 }
 
 footer p {
@@ -570,8 +572,8 @@ div.wrapper {
 }
 
 main section {
-  text-align: center;
   margin-top: 30px;
+  text-align: center;
 }
 
 main section header {
